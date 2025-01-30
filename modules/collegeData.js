@@ -44,7 +44,7 @@ function getAllStudents() {
 
 function getTAs() {
     return new Promise((resolve, reject) => {
-        let TAs = dataCollection.students.filter(student => student.TA === true);
+        let TAs = dataCollection.students.filter(student => student.TA);
         if (TAs.length > 0) {
             resolve(TAs);
         }else {
